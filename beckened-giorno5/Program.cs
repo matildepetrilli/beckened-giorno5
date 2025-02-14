@@ -5,10 +5,9 @@ using beckened_giorno5.Models;
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("==================================================");
+                
                 Console.WriteLine("BENVENUTO NEL CALCOLATORE DELL'IMPOSTA DA VERSARE");
-                Console.WriteLine("==================================================\n");
-
+               
                 // Richiesta dei dati del contribuente
                 Console.Write("Inserisci il Nome: ");
                 string nome = Console.ReadLine();
@@ -55,17 +54,15 @@ using beckened_giorno5.Models;
                     Console.WriteLine("Reddito non valido. Riprova.");
                 }
 
-                // Creazione dell'oggetto Contribuente
                 Contribuente contribuente = new Contribuente(nome, cognome, dataDiNascita, codiceFiscale, sesso, comuneResidenza, redditoAnnuale);
 
-                // Stampa del riepilogo
-                Console.Clear();
-                Console.WriteLine("==================================================");
+               
+                Console.Clear()
                 Console.WriteLine("\nCALCOLO DELL'IMPOSTA DA VERSARE:\n");
                 Console.WriteLine(contribuente);
 
-                // Chiedere se si vuole calcolare per un altro contribuente
-                Console.WriteLine("\n==================================================");
+               
+                
                 Console.Write("\nVuoi calcolare l'imposta per un altro contribuente? (S/N): ");
 
                 string risposta = Console.ReadLine().ToUpper();
