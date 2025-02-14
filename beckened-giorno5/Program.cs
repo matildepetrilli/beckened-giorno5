@@ -8,7 +8,7 @@ using beckened_giorno5.Models;
                 
                 Console.WriteLine("BENVENUTO NEL CALCOLATORE DELL'IMPOSTA DA VERSARE");
                
-                // Richiesta dei dati del contribuente
+                
                 Console.Write("Inserisci il Nome: ");
                 string nome = Console.ReadLine();
 
